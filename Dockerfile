@@ -21,13 +21,13 @@ ENV FORCE_RECONFIGURE=true
 # Available values: en, ru (en by default)
 ENV INSTALL_LANGUAGE=en
 
-#ENV ADMIN_EMAIL=
+ENV ADMIN_EMAIL=marthianfred@gmail.com
 
 # Different for open source and premium versions!
 ENV SHARED_SECRET=changeme-C3z9vi54
 
 ENV HMDM_VARIANT=os
-ENV DOWNLOAD_CREDENTIALS=
+#ENV DOWNLOAD_CREDENTIALS=
 ENV HMDM_URL=https://h-mdm.com/files/hmdm-5.30.3-$HMDM_VARIANT.war
 ENV CLIENT_VERSION=6.14
 
