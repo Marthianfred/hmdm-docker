@@ -25,7 +25,7 @@ services:
   postgresql:
     image: postgres:12-alpine
     ports:
-      - 5432:5432
+      - 5433:5433
     environment:
       POSTGRES_USER: ${SQL_USER}
       POSTGRES_PASSWORD: ${SQL_PASS}
@@ -37,7 +37,7 @@ services:
     image: headwindmdm/hmdm:0.1.5
     ports:
       # Uncomment this port forwarding if you want to use plain HTTP instead of HTTPS
-      #- 80:8080
+      - 80:8080
       - 443:8443
       - 31000:31000
     volumes:

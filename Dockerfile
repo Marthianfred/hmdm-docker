@@ -16,7 +16,7 @@ RUN mkdir -p /usr/local/tomcat/ssl
 # Set to 1 to force updating the config files
 # If not set, they will be created only if there's no files
 #ENV FORCE_RECONFIGURE=true
-ENV FORCE_RECONFIGURE=
+ENV FORCE_RECONFIGURE=true
 
 # Available values: en, ru (en by default)
 ENV INSTALL_LANGUAGE=en
@@ -32,13 +32,13 @@ ENV HMDM_URL=https://h-mdm.com/files/hmdm-5.30.3-$HMDM_VARIANT.war
 ENV CLIENT_VERSION=6.14
 
 ENV SQL_HOST=localhost
-ENV SQL_PORT=5432
+ENV SQL_PORT=5433
 ENV SQL_BASE=hmdm
 ENV SQL_USER=hmdm
 ENV SQL_PASS=Ch@nGeMe
 
 ENV PROTOCOL=https
-#ENV BASE_DOMAIN=your-domain.com
+ENV BASE_DOMAIN=personals-mdm-k6e50b-9ceca1-82-29-168-192.traefik.me
 
 # Set this parameter to your local IP address 
 # if your server is behind the NAT
