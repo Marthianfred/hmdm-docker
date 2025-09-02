@@ -31,11 +31,11 @@ ENV DOWNLOAD_CREDENTIALS=
 ENV HMDM_URL=https://h-mdm.com/files/hmdm-5.30.3-$HMDM_VARIANT.war
 ENV CLIENT_VERSION=6.14
 
-ENV SQL_HOST=localhost
-ENV SQL_PORT=5433
+ENV SQL_HOST=devserver-dbbackend-ozqyrv
+ENV SQL_PORT=5432
 ENV SQL_BASE=hmdm
-ENV SQL_USER=hmdm
-ENV SQL_PASS=Ch@nGeMe
+ENV SQL_USER=neoestudio-ai
+ENV SQL_PASS=CJ4hIuF7p1YzLQXiuGux
 
 ENV PROTOCOL=https
 ENV BASE_DOMAIN=personals-mdm-k6e50b-9ceca1-82-29-168-192.traefik.me
