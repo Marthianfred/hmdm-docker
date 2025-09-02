@@ -5,11 +5,11 @@ FROM tomcat:9-jdk11-temurin-jammy
 RUN apt-get update \
     && apt-get upgrade -y
 RUN apt-get install -y \
-	aapt \
-	wget \
-	sed \
+    aapt \
+    wget \
+    sed \
         postgresql-client \
-	&& rm -rf /var/lib/apt/lists/*
+    && rm -rf /var/lib/apt/lists/*
 RUN mkdir -p /usr/local/tomcat/conf/Catalina/localhost
 RUN mkdir -p /usr/local/tomcat/ssl
 
@@ -40,7 +40,7 @@ ENV SQL_PASS=CJ4hIuF7p1YzLQXiuGux
 ENV PROTOCOL=https
 ENV BASE_DOMAIN=personals-mdm-k6e50b-9ceca1-82-29-168-192.traefik.me
 
-# Set this parameter to your local IP address 
+# Set this parameter to your local IP address
 # if your server is behind the NAT
 #ENV LOCAL_IP=172.31.91.82
 
@@ -59,7 +59,7 @@ EXPOSE 31000
 
 COPY docker-entrypoint.sh /
 COPY update-web-app-docker.sh /opt/hmdm/
-COPY tomcat_conf/server.xml /usr/local/tomcat/conf/server.xml 
+COPY tomcat_conf/server.xml /usr/local/tomcat/conf/server.xml
 ADD templates /opt/hmdm/templates/
 
 ENTRYPOINT ["/docker-entrypoint.sh"]
