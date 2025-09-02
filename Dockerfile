@@ -37,7 +37,7 @@ ENV SQL_BASE=hmdm
 ENV SQL_USER=neoestudio-ai
 ENV SQL_PASS=CJ4hIuF7p1YzLQXiuGux
 
-ENV PROTOCOL=https
+ENV PROTOCOL=http
 ENV BASE_DOMAIN=personals-mdm-k6e50b-9ceca1-82-29-168-192.traefik.me
 
 # Set this parameter to your local IP address
