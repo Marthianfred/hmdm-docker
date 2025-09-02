@@ -18,16 +18,10 @@ RUN mkdir -p /usr/local/tomcat/ssl
 #ENV FORCE_RECONFIGURE=true
 ENV FORCE_RECONFIGURE=true
 
-# Available values: en, ru (en by default)
 ENV INSTALL_LANGUAGE=en
-
 ENV ADMIN_EMAIL=marthianfred@gmail.com
-
-# Different for open source and premium versions!
-ENV SHARED_SECRET=changeme-C3z9vi54
-
+ENV SHARED_SECRET=TU-MAMA-EN-TANGAS-C3z9vi54
 ENV HMDM_VARIANT=os
-#ENV DOWNLOAD_CREDENTIALS=
 ENV HMDM_URL=https://h-mdm.com/files/hmdm-5.30.3-$HMDM_VARIANT.war
 ENV CLIENT_VERSION=6.14
 
@@ -40,15 +34,7 @@ ENV SQL_PASS=CJ4hIuF7p1YzLQXiuGux
 ENV PROTOCOL=http
 ENV BASE_DOMAIN=personals-mdm-k6e50b-9ceca1-82-29-168-192.traefik.me
 
-# Set this parameter to your local IP address
-# if your server is behind the NAT
-#ENV LOCAL_IP=172.31.91.82
-
-# Comment it to use custom certificates
 ENV HTTPS_LETSENCRYPT=true
-# Mount the custom certificate path if custom certificates must be used
-# ENV_HTTPS_CERT_PATH is the path to certificates and keys inside the container
-#ENV HTTPS_CERT_PATH=/cert
 ENV HTTPS_CERT=cert.pem
 ENV HTTPS_FULLCHAIN=fullchain.pem
 ENV HTTPS_PRIVKEY=privkey.pem
